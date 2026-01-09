@@ -1,1 +1,251 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>lipezin vendas - Free Fire</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    /* Body e fundo */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0b1524 url('https://i.ibb.co/hF73ZWHr/IMG-20260108-WA0178.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #d0d9ff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem;
+      animation: fadeInPage 1s ease forwards;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+    }
+
+    /* Perfil */
+    .profile {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #14f4e0;
+      box-shadow:
+        0 0 10px #14f4e0,
+        0 0 30px #08b9a8;
+      object-fit: cover;
+      filter: drop-shadow(0 0 4px #14f4e0);
+      transition: transform 0.3s ease;
+    }
+
+    .profile img:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+      box-shadow:
+        0 0 20px #14f4e0,
+        0 0 40px #08b9a8;
+    }
+
+    /* Título Neon */
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 900;
+      text-align: center;
+      color: #14f4e0;
+      text-shadow:
+        0 0 5px #14f4e0,
+        0 0 10px #14f4e0,
+        0 0 20px #14f4e0,
+        0 0 40px #08b9a8,
+        0 0 80px #08b9a8;
+      margin-bottom: 0.3rem;
+    }
+
+    p.subtitle {
+      text-align: center;
+      font-size: 1rem;
+      color: #7fd1ffcc;
+      margin-bottom: 2rem;
+    }
+
+    /* Card de produto */
+    .product-card {
+      background: linear-gradient(145deg, #162f56, #1b3a72);
+      border-radius: 15px;
+      box-shadow:
+        inset 3px 3px 5px #0b1524,
+        inset -3px -3px 7px #2153a5,
+        4px 4px 10px #0e1a36;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow:
+        inset 5px 5px 10px #0b1524,
+        inset -5px -5px 15px #2980d1,
+        6px 6px 15px #133870;
+    }
+
+    /* Imagem clicável do produto */
+    .product-image-link {
+      display: block;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      box-shadow:
+        0 0 10px #0875d8cc,
+        inset 0 0 8px #1d3557;
+      transition: transform 0.3s ease;
+    }
+    .product-image-link:hover {
+      transform: scale(1.05);
+    }
+    .product-image-link img {
+      display: block;
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    /* Título */
+    .product-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+      color: #b4d7ff;
+      text-align: center;
+    }
+
+    /* Descrição */
+    .product-description {
+      font-size: 0.9rem;
+      color: #c0d6ffcc;
+      margin-bottom: 1rem;
+      text-align: center;
+      line-height: 1.3;
+    }
+
+    /* Botão comprar */
+    .btn-buy {
+      display: block;
+      margin: 0 auto;
+      background: linear-gradient(45deg, #14f4e0, #0ab3a5);
+      border: none;
+      border-radius: 25px;
+      padding: 0.6rem 1.8rem;
+      color: #0b1524;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow:
+        0 0 8px #14f4e0,
+        0 4px 8px #0ab3a5;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+    .btn-buy:hover {
+      background: linear-gradient(45deg, #0ab3a5, #14f4e0);
+      box-shadow:
+        0 0 15px #0ab3a5,
+        0 6px 15px #14f4e0;
+      color: #fff;
+    }
+
+    /* Animação de entrada */
+    @keyframes fadeInPage {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="pageContainer">
+    <!-- Foto de Perfil -->
+    <div class="profile">
+      <img src="https://i.ibb.co/Q7gvWXDy/IMG-20260107-WA0141.jpg" alt="Foto do Perfil" />
+    </div>
+
+    <h1>lipezin vendas</h1>
+    <p class="subtitle">Contas Exclusivas de Free Fire</p>
+
+    <!-- Produto 1 -->
+    <div class="product-card">
+      <a href="https://i.ibb.co/gFrkvD5B/IMG-20260107-WA0140.jpg" target="_blank" class="product-image-link" title="TABELA DE PRODUTOS - VENDENDO">
+        <img src="https://i.ibb.co/gFrkvD5B/IMG-20260107-WA0140.jpg" alt="MENU DE PRODUTOS" />
+      </a>
+      <div class="product-title">TABELA DE PRODUTOS - VENDENDO</div>
+      <div class="product-description">
+        Conta com excelente rank, skins exclusivas e muitos diamantes para você dominar o jogo.
+      </div>
+      <button class="btn-buy" onclick="comprar('Conta Ranqueada Elite')">Comprar Agora</button>
+    </div>
+
+    <!-- Produto 2 -->
+    <div class="product-card">
+      <a href="https://i.ibb.co/0j5BZHGm/IMG-20260108-WA0017.jpg" target="_blank" class="product-image-link" title="Conta VIP com Personagens">
+        <img src="https://i.ibb.co/0j5BZHGm/IMG-20260108-WA0017.jpg" alt="Conta Free Fire VIP" />
+      </a>
+      <div class="product-title">PASSES DE ELITE- MELHOR PREÇO</div>
+      <div class="product-description">
+        Conta VIP com vários personagens liberados, pets e armas personalizadas para você se destacar.
+      </div>
+      <button class="btn-buy" onclick="comprar('Conta VIP Personagens')">Comprar Agora</button>
+    </div>
+
+    <!-- Produto 3 -->
+    <div class="product-card">
+      <a href="https://i.ibb.co/bgQzBjRb/b6c80e49ecba4da1bd34d6b6d4232a3e.jpg" target="_blank" class="product-image-link" title="Conta com muitos diamantes">
+        <img src="https://i.ibb.co/bgQzBjRb/b6c80e49ecba4da1bd34d6b6d4232a3e.jpg" alt="Conta Free Fire Diamantes" />
+      </a>
+      <div class="product-title">Conta Free Fire - Diamantes Boost</div>
+      <div class="product-description">
+        Conta com saldo alto de diamantes para compras no game e pacotes especiais desbloqueados.
+      </div>
+      <button class="btn-buy" onclick="comprar('Conta Diamantes Boost')">Comprar Agora</button>
+    </div>
+    
+    <!-- Novo Produto Adicionado -->
+    <div class="product-card">
+      <a href="https://i.ibb.co/21kfr5jD/IMG-20260109-WA0088.jpg" target="_blank" class="product-image-link" title="NOSSOS PRODUTOS">
+        <img src="https://i.ibb.co/21kfr5jD/IMG-20260109-WA0088.jpg" alt="NOSSOS PRODUTOS" />
+      </a>
+      <div class="product-title">NOSSOS PRODUTOS</div>
+      <div class="product-description">
+        Oferecemos os melhores Passes de Elite, Contas Ragnarok, Armas Evolutivas, Incubadoras e muito mais! Nossa lojinha é confiável, segura e referência em Free Fire, garantindo os melhores preços e atendimento impecável.
+      </div>
+      <button class="btn-buy" onclick="comprar('Nossos Produtos - Passes, Incubadoras e Contas')">Comprar Agora</button>
+    </div>
+  </div>
+
+<script>
+  function comprar(produto) {
+    // Link fixo do vendedor (não permite enviar texto via parâmetro)
+    const whatsappURL = "https://wa.me/message/M273XU2HXTTXA1";
+
+    // Alerta instruindo o usuário a informar o produto na mensagem
+    alert(`Você será redirecionado ao WhatsApp do vendedor.\n\nPor favor, envie a mensagem: \n"Tenho interesse no produto: ${produto}"`);
+
+    // Abrir o link em nova aba
+    window.open(whatsappURL, '_blank');
+  }
+</script>
+</body>
+</html>
